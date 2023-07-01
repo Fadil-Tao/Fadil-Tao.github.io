@@ -4,7 +4,6 @@ async function getRandomUser(){
     const user = data.results[0];
     console.log(user);
     displayuser(user);  
-    showLoadingPopup();
 
 }
 function displayuser(user){
@@ -22,13 +21,6 @@ function displayuser(user){
 
 }
 
-function showLoadingPopup() {
 
-    var loadingPopup = document.getElementById("loadingPopup");
-    loadingPopup.style.display = "block";
-    setTimeout(function() {
-      loadingPopup.style.display = "none";
-    }, 1000);
-  }
 
 
