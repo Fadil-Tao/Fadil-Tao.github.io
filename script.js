@@ -28,11 +28,9 @@ function showLoadingPopup() {
     setTimeout(function() {
       loadingPopup.style.display = "none";
     }, 1000);
-    getRandomUser()
   }
 
 function clicked() {
     showLoadingPopup();
     getRandomUser() ;
 }
-getRandomUser();
