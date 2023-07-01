@@ -12,9 +12,9 @@
 <body>
     <div class="user-profile">
         <div class="profile-top">
-           <img src="https://randomuser.me/api/portraits/thumb/men/39.jpg" alt="">   <!--gambar placeholder -->
+           <img id="image" src="https://randomuser.me/api/portraits/thumb/men/39.jpg" alt="">   <!--gambar placeholder -->
             <div class="profile-info">
-                <span id="name">Name</span>
+                <span id='name'>Name</span>
             </div>
         </div>
 
@@ -25,7 +25,7 @@
             </div>
             <div class="profle-info">
                 <span class="material-symbols-outlined">call</span>
-                <span id="email">Nomor Hp</span>
+                <span id="phone">Nomor Hp</span>
             </div>
             <div class="profle-info">
                 <span class="material-symbols-outlined">location_on</span>
@@ -33,7 +33,10 @@
             </div>
         </div>
     </div>
-    <button>Next ppl</button>
+    <button onclick="clicked()">Next ppl</button>
+    <div id="loadingPopup" style="display: none;">
+        <span>Loading...</span>
+    </div> 
 <script src="script.js"></script>
 </body>
 </html>
